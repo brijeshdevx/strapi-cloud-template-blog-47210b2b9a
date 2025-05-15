@@ -11,10 +11,6 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "variantId": {
-      "type": "uid",
-      "required": true
-    },
     "title": {
       "type": "string",
       "required": true
@@ -24,6 +20,11 @@
       "relation": "manyToOne",
       "target": "api::product.product",
       "inversedBy": "productVariants"
+    },
+    "variantId": {
+      "type": "string",
+      "required": true,
+      "unique": true
     }
   }
 }

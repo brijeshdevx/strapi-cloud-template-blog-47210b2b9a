@@ -11,10 +11,6 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "productId": {
-      "type": "uid",
-      "required": true
-    },
     "title": {
       "type": "string",
       "required": true
@@ -29,6 +25,14 @@
       "type": "string",
       "required": true,
       "unique": true
+    },
+    "productId": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "productType": {
+      "type": "string"
     }
   }
 }
